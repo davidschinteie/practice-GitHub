@@ -89,3 +89,9 @@
 [Remove a large file from several commits ago](https://superuser.com/questions/1191186/remove-large-file-from-several-commits-ago-in-git)
 
 [Adding an existing project to github from a new directory - git remote add origin remote_repo_URL && git remote -v](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
+
+[How can I determine the URL that a local Git repository was originally cloned from?](https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr)
+
+`git config --get remote.origin.url`
+
+`git remote show origin`
