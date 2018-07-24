@@ -12,6 +12,8 @@
 
 `git status` List the files you've changed and those you still need to add or commit
 
+## Git branch
+
 `git branch` List all the branches in your repo, and also tell you what branch you're currently in
 
 `git checkout <branchname>` Switch from one branch to another:
@@ -19,6 +21,12 @@
 `git checkout -b <branchname>` Create a new branch and switch to it:
 
 `git push origin <branchname>` Push the branch to your remote repository, so others can use it
+
+`git push --delete <remote_name> <branch_name>` Delete Remote Branch 
+
+`git branch -d branch_name` Delete Local Branch
+
+## Git pull
 
 `git pull` Fetch and merge changes on the remote server to your working directory
 
