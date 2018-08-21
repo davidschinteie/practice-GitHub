@@ -76,6 +76,12 @@
 
 ## Other Commands
 
+`git stash` - when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+
+`git stash pop` - Remove a single stashed state from the stash list and apply it on top of the current working tree state, 
+
+Workflow: `git stash` -> `git checkout -b new_branch` -> `git stash pop`
+
 `git fetch origin`
 
 `git reset --hard origin/master` (comenzi de upload a masterului branchul pe care esti - implica stergerea completa a continutului de pe branchul pe care esti)
@@ -103,3 +109,11 @@
 `git config --get remote.origin.url`
 
 `git remote show origin`
+
+## Git setup for automatic upload on live server at git push
+
+`git remote add live ssh://username@domain.com/root/example.git` Add a new live remote
+
+`git remote -v` View current remotes
+
+`git remote rm live` Remove live remote
